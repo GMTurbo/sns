@@ -4,7 +4,7 @@ import java.util.UUID
 
 import me.snov.sns.model.Message
 
-object PublishResponse extends XmlHttpResponse {
+object PublishResponse extends JsonHttpResponse {
   def publish(message: Message) = {
     response(
       <PublishResponse xmlns="http://sns.amazonaws.com/doc/2010-03-31/">
