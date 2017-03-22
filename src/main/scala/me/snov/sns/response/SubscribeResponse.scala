@@ -5,7 +5,7 @@ import java.util.UUID
 import akka.http.scaladsl.model.HttpResponse
 import me.snov.sns.model.Subscription
 
-object SubscribeResponse extends XmlHttpResponse {
+object SubscribeResponse extends JsonHttpResponse {
   def subscribe(subscription: Subscription) = {
     response(
       <SubscribeResponse xmlns="http://sns.amazonaws.com/doc/2010-03-31/">
